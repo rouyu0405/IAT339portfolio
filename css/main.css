@@ -1,14 +1,6 @@
 /* fonts, from: Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Walter+Turncoat&display=swap');
 
-/* Variables for color palette */
-:root {
-    --text-color: #292727;
-    --bg-primary: #ffffff;
-    --secondary-color: #BADA55;
-    --accent-color: #B2BF99;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -24,7 +16,7 @@ body {
 h1 {
     font-family: "Livvic", sans-serif;
     font-weight: 600;
-    font-size: 6.25rem;
+    font-size: clamp(3rem, 8vw + 1rem, 6.25rem);
     color: #292727;
     margin-top: 0;
     line-height: 1.1;
@@ -32,8 +24,8 @@ h1 {
 
 h2 {
     font-family: "Instrument Sans", sans-serif;
-    font-size: 5rem;
     font-weight: 600;
+    font-size: clamp(2.5rem, 6vw + 1rem, 5rem);
     color: #292727;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -41,22 +33,22 @@ h2 {
 
 h3 {
     font-family: "Instrument Sans", sans-serif;
-    font-size: 3.75rem;
     font-weight: 500;
+    font-size: clamp(2rem, 4vw + 1rem, 3.75rem);
     color: #292727;
     margin-top: 1.5rem;
 }
 
 h4 {
     font-family: "Walter Turncoat", cursive;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
     font-weight: 400;
     margin: 0;
 }
 
 p, li, a, input, button, label, legend {
     font-family: "Didact Gothic", sans-serif;
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 0.5vw + 1rem, 1.25rem);
     font-weight: 400;
     color: #292727;
     line-height: 1.6;
