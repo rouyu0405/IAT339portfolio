@@ -14,35 +14,44 @@
 
 <body>
     <header class="project-header">
-        <div class="logo">
-            <img src="/img/logo.svg" alt="Logo">
-        </div>
-        <div class="nav-link">
-            <a class="button-nav" href="/home.html">About</a>
-            <a class="button-nav" href="translink.html">Projects</a>
-            <a class="button-nav" href="/contacts.html">Contact</a>
-        </div>
+        <nav class="nav box">
+            <div class="logo">
+                <img src="/img/logo.svg" alt="Logo">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-link">
+                <a class="box-item-nav" href="#">About</a>
+                <a class="box-item-nav" href="#">Projects</a>
+                <a class="box-item-nav" href="#">Contact</a>
+            </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="project-number">01</div>
+        <section class="translink-hero-section">
             <div class="hero-content">
                 <div class="hero-text">
                     <h4><span class="label">UX Design Case Study</span></h4>
-                    <h2 class="hero-title">Interactive<br>Zone Map</h2>
+                    <h1 class="hero-title">Interactive<br>Zone Map</h1>
                     <p class="hero-description">
                         Redesigning the TransLink SkyTrain fare map to simplify the zone-based system for new and
                         infrequent riders.
                     </p>
 
                     <div class="hero-metadata">
-                        <p><span class="label">Year:</span> Spring 2025</p>
-                        <p><span class="label">Built for:</span> IAT 333 - Interaction Design Methods</p>
-                        <p><span class="label">In collaboration with:</span> Irina N. / Max N. / Mikael G.</p>
-                        <p><span class="label">Role:</span> Lead UX Researcher & Designer</p>
-                        <p><span class="label">Skills&Tools:</span> Research / Interview / Figma / Film Editing / Adobe
-                            After Effects</p>
+                        <p><span class="label">Year:</span> Spring 2025<br>
+                            <span class="label">Built for:</span> IAT 333 - Interaction Design Methods<br>
+                            <span class="label">In collaboration with:</span> Irina N. / Max N. / Mikael G.<br>
+                            <span class="label">Role:</span> Lead UX Researcher & Designer<br>
+                            <span class="label">Skills & Tools:</span> Research / Interview / Figma / Film Editing /
+                            Adobe After Effects
+                        </p>
                     </div>
                 </div>
             </div>
@@ -51,7 +60,7 @@
         <section class="content-section">
             <div class="section-grid">
                 <div class="section-col objective">
-                    <h2 class="section-heading">objective</h2>
+                    <h2 class="section-heading">Objective</h2>
                     <p class="section-text">
                         The existing TransLink SkyTrain fare system presents a significant cognitive load for infrequent
                         riders. The "Fare Zone" logic, which fluctuates based on time-of-day and day-of-week, creates
@@ -59,90 +68,91 @@
                     </p>
                 </div>
 
-                <div class="section-col arrow">→</div>
+                <div class="section-col arrow" aria-hidden="true">→</div>
 
                 <div class="section-col outcome-summary">
-                    <h2 class="section-heading">outcome</h2>
+                    <h2 class="section-heading">Outcome</h2>
                     <p class="section-text">
                         An interactive zone map that can create a smoother ticket purchasing experience for
-                        low-frequency
-                        transit riders through research from interviews, workshops, and critques with various
-                        stakeholders.
+                        low-frequency transit riders through research from interviews, workshops, and critiques with
+                        various stakeholders.
                     </p>
                 </div>
             </div>
         </section>
 
+        <section class="outcome-example">
+            <img src="/img/CVM_Concept.png">
+        </section>
+
         <section class="content-section">
-            <h2 class="section-heading section-title">my roles</h2>
+            <h2 class="section-heading section-title">My Roles</h2>
             <div class="roles-grid">
                 <div class="role-item">
-                    <p class="role-number">01.</p>
-                    <p class="role-text"><strong>UX Research</strong><br>Led short surveys with passengers at
-                        Metrotown Station.</p>
+                    <h1 class="role-number">01.</h1>
+                    <p class="role-text"><strong>the Role</strong><br>Details in here of the role.</p>
                 </div>
                 <div class="role-item">
-                    <p class="role-number">02.</p>
-                    <p class="role-text"><strong>Video Lead</strong><br>Directed the user journey video to bridge
-                        wireframes and physical reality.</p>
+                    <h1 class="role-number">02.</h1>
+                    <p class="role-text"><strong>the Role</strong><br>Details in here of the role.</p>
                 </div>
                 <div class="role-item">
-                    <p class="role-number">03.</p>
-                    <p class="role-text"><strong>Collaboration</strong><br>Facilitated co-creation workshops to align
-                        design decisions with stakeholder goals.</p>
+                    <h1 class="role-number">03.</h1>
+                    <p class="role-text"><strong>the Role</strong><br>Details in here of the role.</p>
                 </div>
             </div>
         </section>
 
-        <section class="process-section">
-            <div class="process-content">
-                <h2>the process</h2>
-                <div class="process-container">
-                    <div class="process-column-left">
-                        <h4>Survey Sampling</h4>
-                    </div>
+        <section class="content-section">
+            <h2 class="section-heading section-title">the Process</h2>
 
-                    <div class="process-column-right">
-                        <img src="/img/Persona.png" alt="Persona" class="process-image">
-                        <div class="process-description">
-                            <p>
-                                Conducted field research at Metrotown Station, <strong>surveying 10 users</strong>
-                                interacting with CVMs. We identified that users frequently looked back and forth
-                                between the screen and static map, causing "navigation loops."
-                            </p>
-                        </div>
+            <div class="process-container">
+                <div class="process-column-left">
+                    <h4>Survey Sampling</h4>
+                </div>
+
+                <div class="process-column-right">
+                    <img src="/img/Persona.png" alt="Persona" class="process-image">
+                    <div class="process-description">
+                        <p>
+                            Conducted field research at Metrotown Station, <strong>surveying 10 users</strong>
+                            interacting with CVMs. We identified that users frequently looked back and forth
+                            between the screen and static map, causing "navigation loops."
+                        </p>
                     </div>
                 </div>
-                <div class="process-container">
-                    <div class="process-column-left">
-                        <h4>Survey Sampling</h4>
-                    </div>
+            </div>
 
-                    <div class="process-column-right">
-                        <img src="/img/Persona.png" alt="Persona" class="process-image">
-                        <div class="process-description">
-                            <p>
-                                Conducted field research at Metrotown Station, <strong>surveying 10 users</strong>
-                                interacting with CVMs. We identified that users frequently looked back and forth
-                                between the screen and static map, causing "navigation loops."
-                            </p>
-                        </div>
+            <div class="process-container">
+                <div class="process-column-left">
+                    <h4>Survey </h4>
+                </div>
+
+                <div class="process-column-right">
+                    <img src="/img/Persona.png" alt="Persona" class="process-image">
+                    <div class="process-description">
+                        <p>
+                            Conducted field research at Metrotown Station, <strong>surveying 10 users</strong>
+                            interacting with CVMs. We identified that users frequently looked back and forth
+                            between the screen and static map, causing "navigation loops."
+                        </p>
                     </div>
                 </div>
-                <div class="process-container">
-                    <div class="process-column-left">
-                        <h4>Survey Sampling</h4>
-                    </div>
+            </div>
 
-                    <div class="process-column-right">
-                        <img src="/img/Persona.png" alt="Persona" class="process-image">
-                        <div class="process-description">
-                            <p>
-                                Conducted field research at Metrotown Station, <strong>surveying 10 users</strong>
-                                interacting with CVMs. We identified that users frequently looked back and forth
-                                between the screen and static map, causing "navigation loops."
-                            </p>
-                        </div>
+            <div class="process-container">
+                <div class="process-column-left">
+                    <h4>/ Sampling</h4>
+                </div>
+
+                <div class="process-column-right">
+                    <img src="/img/Persona.png" alt="Persona" class="process-image">
+                    <div class="process-description">
+                        <p>
+                            Conducted field research at Metrotown Station, <strong>surveying 10 users</strong>
+                            interacting with CVMs. We identified that users frequently looked back and forth
+                            between the screen and static map, causing "navigation loops."
+                        </p>
                     </div>
                 </div>
             </div>
@@ -154,8 +164,8 @@
                     <img src="/img/Persona.png" alt="Description">
                 </div>
                 <div class="challenges-text">
-                    <h2>Feature One</h2>
-                    <p>Details about your first feature go here. The layout starts with the image on the left.</p>
+                    <h2>the Challenges</h2>
+                    <p>Details of this step in the process and what it led to. Some longer text after this.</p>
                 </div>
             </div>
 
@@ -164,55 +174,48 @@
                     <img src="/img/Persona.png" alt="Description">
                 </div>
                 <div class="challenges-text">
-                    <h2>Feature Two</h2>
-                    <p>Details about your second feature. CSS will automatically flip this row's order.</p>
+                    <h2>the Solutions</h2>
+                    <p>Details of this step in the process and what it led to. Some longer text after this.</p>
                 </div>
             </div>
         </section>
 
-        <section class="outcome">
-            <div class="outcome-title">
-                <h2>outcomes</h2>
-            </div>
+        <section class="content-section">
+
             <div class="outcome-main">
+                <h2>the Outcomes</h2>
                 <div class="outcome-text">
                     <p>Suspendisse porttitor sem id velit bibendum, a consectetur purus tristique. Integer accumsan,
-                        metus
-                        hendrerit feugiat imperdiet,
-                        neque lectus porttitor justo, sit amet vestibulum ipsum quam sed ligula. Sed iaculis eget velit
-                        vitae posuere.</p>
+                        metus hendrerit feugiat imperdiet, neque lectus porttitor justo, sit amet vestibulum ipsum quam
+                        sed ligula. Sed iaculis eget velit vitae posuere.</p>
                 </div>
                 <div class="outcome-img">
-                    <img src="/img/CVM_Concept.png" alt="Image">
+                    <img src="/img/CVM_Concept.png" alt="CVM Concept showing Zone 1">
                     <p>Zone 1</p>
                 </div>
                 <div class="outcome-img">
-                    <img src="/img/CVM_Concept.png" alt="Image">
+                    <img src="/img/CVM_Concept.png" alt="CVM Concept showing Zone 1">
                     <p>Zone 1</p>
                 </div>
                 <div class="outcome-img">
-                    <img src="/img/CVM_Concept.png" alt="Image">
+                    <img src="/img/CVM_Concept.png" alt="CVM Concept showing Zone 1">
                     <p>Zone 1</p>
                 </div>
             </div>
         </section>
 
-        <section class="takeaway">
-            <div class="takeaway-title">
-                <h2>takeaways</h2>
-            </div>
+        <section class="content-section">
+            <h2>the Takeaways</h2>
+
             <div class="takeaway-text">
                 <p>Suspendisse porttitor sem id velit bibendum, a consectetur purus tristique. Integer accumsan, metus
-                    hendrerit feugiat imperdiet,
-                    neque lectus porttitor justo, sit amet vestibulum ipsum quam sed ligula. Sed iaculis eget velit
-                    vitae posuere. Praesent nisi dolor,
-                    gravida tincidunt elit non, dignissim pharetra odio. Nunc maximus vulputate varius. Suspendisse ut
-                    est scelerisque, vulputate lorem in,
-                    suscipit massa. Maecenas convallis, felis quis fermentum varius, diam arcu varius sapien, nec cursus
-                    purus libero tincidunt magna.
-                    Donec rhoncus quam ut hendrerit mattis. Sed dolor sem, aliquet eu lorem eget, porttitor interdum
-                    turpis. Vestibulum semper diam mollis
-                    ligula interdum sodales.</p>
+                    hendrerit feugiat imperdiet, neque lectus porttitor justo, sit amet vestibulum ipsum quam sed
+                    ligula. Sed iaculis eget velit vitae posuere. Praesent nisi dolor, gravida tincidunt elit non,
+                    dignissim pharetra odio. Nunc maximus vulputate varius. Suspendisse ut est scelerisque, vulputate
+                    lorem in, suscipit massa. Maecenas convallis, felis quis fermentum varius, diam arcu varius sapien,
+                    nec cursus purus libero tincidunt magna. Donec rhoncus quam ut hendrerit mattis. Sed dolor sem,
+                    aliquet eu lorem eget, porttitor interdum turpis. Vestibulum semper diam mollis ligula interdum
+                    sodales.</p>
             </div>
         </section>
 
@@ -220,10 +223,51 @@
             <p class="footer-year">© 2026 — Elizabeth Liao</p>
             <div class="footer-links">
                 <a href="../styleguide.html" class="footer-link">Style Guide</a>
+                <a href="../citations.html" class="footer-link">GitHub</a>
                 <a href="../citations.html" class="footer-link">Citations</a>
             </div>
         </footer>
     </main>
+
+    <script>
+
+        const header = document.querySelector('.project-header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+
+        // scroll animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const outcomeImages = document.querySelectorAll('.outcome-img');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.25
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            outcomeImages.forEach(image => {
+                observer.observe(image);
+            });
+        });
+    </script>
 </body>
 
 </html>
