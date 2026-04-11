@@ -42,14 +42,26 @@ body {
 /* Hero Section */
 .translink-hero-section {
     position: relative;
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('../img/translink-hero.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../img/translink-hero.png');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 0 5%;
+    padding: 8rem 5% 4rem 5%;
+}
+
+.uncenshered-hero-section {
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../img/uncenshered_hero.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 8rem 5% 4rem 5%;
 }
 
 .hero-content {
@@ -71,17 +83,18 @@ body {
 
 .hero-title {
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 .label {
     color: #BADA55;
 }
 
-/* Layout */
+/* Outcome */
 .content-section,
 .outcome,
 .takeaway {
-    padding: 8rem 5%;
+    padding: 2rem 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -93,19 +106,21 @@ body {
     align-items: start;
 }
 
-.section-col.objective { 
-    grid-column: 1 / 5; 
+.section-col.objective {
+    grid-column: 1 / 5;
 }
 
-.section-col.arrow { 
-    grid-column: 6; 
-    text-align: center; 
-    font-size: 3rem; 
-    color: #BADA55; 
+.section-col.arrow {
+    grid-column: 6;
+    text-align: center;
+    font-size: 3rem;
+    color: #BADA55;
+    align-self: center;
+    line-height: 1;
 }
 
-.section-col.outcome-summary { 
-    grid-column: 8 / 13; 
+.section-col.outcome-summary {
+    grid-column: 8 / 13;
 }
 
 .outcome-example {
@@ -121,7 +136,7 @@ body {
 .outcome-example img {
     width: 100%;
     height: 400px;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
 }
 
@@ -130,12 +145,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;  
+    text-align: center;
 }
 
 .outcome-text p {
-    max-width: 800px; 
-    margin: 0 auto 4rem auto; 
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
 }
 
 .outcome-img {
@@ -144,36 +159,90 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
-.outcome-img p { /* caption */
+.outcome-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.outcome-img p {
+    /* caption */
     text-align: left;
     margin-top: 1rem;
-    color: #555; /* softer gray to differentiate from main body */
+    color: #555;
+    /* softer gray to differentiate from main body */
     width: 100%;
 }
 
-/* Footer*/
-.project-footer {
-    padding: 5rem 5%;
-    display: flex;
-    justify-content: space-between
+/* For UncensHERed page only */
+.outcome-img.web {
+    max-width: 400px;
 }
 
-.footer-link {
-    color: #292727;
-    text-decoration: none;
-    font-weight: 600;
+.outcome-img.combo-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
 }
+
+.outcome-img.combo-layout img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.outcome-img.combo-layout p {
+    grid-column: 1 / -1;
+    text-align: left;
+    margin-top: 1rem;
+    color: #555;
+}
+
+.takeaway-text {
+    max-width: 1200px;
+}
+
+.challenges-image.ella {
+    display: flex;
+    justify-content: center;
+    /* Centers the image within the container */
+}
+
+.challenges-image.ella img {
+    width: auto;
+    max-height: 600px;
+}
+
+/*  Scroll-in Animation*/
+/* Base state*/
+.outcome-img {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    will-change: opacity, transform;
+}
+
+/* Active state*/
+.outcome-img.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 @media (max-width: 1200px) {
-    
+
     /* Padding */
     .content-section,
     .outcome,
     .takeaway {
-        padding: 6rem 5%;
+        padding: 1.5rem 5%;
     }
 
     /* Hero Section  */
@@ -182,21 +251,21 @@ body {
     }
 
     /*Objective*/
-    .section-col.objective { 
+    .section-col.objective {
         grid-column: 1 / 6;
     }
-    
-    .section-col.arrow { 
+
+    .section-col.arrow {
         grid-column: 6;
     }
 
-    .section-col.outcome-summary { 
+    .section-col.outcome-summary {
         grid-column: 7 / 13;
     }
 
     /* Roles */
     .roles-grid {
-        gap: 1.5rem; 
+        gap: 1.5rem;
     }
 
     /* Process & Challenges*/
@@ -207,11 +276,12 @@ body {
 }
 
 @media (max-width: 768px) {
+
     /* Hero Section */
     .translink-hero-section {
         height: auto;
-        min-height: 85vh; 
-        padding-top: 8rem; 
+        min-height: 85vh;
+        padding-top: 8rem;
         padding-bottom: 4rem;
     }
 
@@ -219,20 +289,12 @@ body {
         grid-column: 1 / -1;
     }
 
-    .hero-title {
-        font-size: 4.5rem;
-    }
-
     .outcome-example img {
-        height: 250px;     
-    }
-
-    .content-section {
-        padding: 4rem 5%;
+        height: 250px;
     }
 
     .section-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
@@ -243,7 +305,7 @@ body {
 
     .section-col.arrow {
         grid-column: 1 / -1;
-        transform: rotate(90deg); 
+        transform: rotate(90deg);
         margin: 1rem 0;
         line-height: 1;
     }
@@ -251,35 +313,38 @@ body {
     /* Outcome Section */
     .outcome-main {
         flex-direction: column;
-        gap: 2.5rem;
         align-items: center;
         padding: 4rem 5%;
     }
 
     .outcome-img {
         width: 100%;
-        max-width: 450px;
+        max-width: 100%;
         margin-bottom: 0;
     }
 
     .outcome-text p {
         max-width: 100%;
-        margin-bottom: 3rem; 
+        margin-bottom: 3rem;
         text-align: left;
     }
 
-    /*  Scroll-in Animation*/
-    /* Base state*/
-    .outcome-img {
-        opacity: 0;
-        transform: translateY(25px);
-        transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-        will-change: opacity, transform;
+    /* For UncensHERed page only */
+    .outcome-img.combo-layout {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .outcome-main {
+        margin-top: 0;
     }
 
-    /* Active state*/
-    .outcome-img.animate-in {
-        opacity: 1;
-        transform: translateY(0);
+    .outcome-img p {
+        padding: 0 5%;
+        margin-top: 0.1rem;
     }
+
 }
