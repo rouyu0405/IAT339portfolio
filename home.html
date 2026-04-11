@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav-bar">
+    <header class="project-header">
+        <nav class="nav box">
             <div class="logo">
-                <img src="img/logo.svg" alt="Logo">
+                <img src="/img/logo.svg" alt="Logo">
             </div>
             <input type="checkbox" id="menu-toggle" class="menu-checkbox">
             <label for="menu-toggle" class="hamburger">
@@ -23,11 +23,12 @@
                 <span></span>
             </label>
             <div class="nav-link">
-                <a class="button-nav" href="#">About</a>
-                <a class="button-nav" href="projects/translink.html">Projects</a>
-                <a class="button-nav" href="#">Contact</a>
+                <a class="box-item-nav" href="/home.html">About</a>
+                <a class="box-item-nav" href="#projects">Projects</a>
+                <a class="box-item-nav" href="/contacts.html">Contact</a>
             </div>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -48,62 +49,68 @@
         <section class="about">
             <div class="about-text">
                 <h2>about</h2>
-                <p>No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full
-                    equality to a fair and public hearing by an independent and impartial tribunal, in the
-                    determination of his rights and obligations and of any criminal charge against him.</p>
+                <p>Elizabeth Liao is currently an undergraduate student at Simon Fraser University, majoring in
+                    Interactive Arts & Technology with a focus on user experience and interface (UX/UI) design.<br>
+                    She designs web and mobile applications through a process of research and iteration to create
+                    user-centric applications that provide day-to-day accessibility control.</p>
             </div>
             <div class="about-image">
                 <img src="img/Cat.gif" alt="About Image">
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2 class="projects-heading">projects</h2>
 
             <div class="project-card">
                 <div class="project-tags">
-                    <h4><span class="number">01</span></h4>
                     <h4><span class="category">ux design</span></h4>
                 </div>
 
-                <img src="img/translink-hero.png" alt="TransLink Compass Vending Machine">
+                <img src="img/translink-hero.png" alt="Project Thumbnail">
 
-                <div class="card-overlay">
-                    <h2 class="project-title">Interactive<br>Zone Map</h2>
-                    <p class="project-description">
-                        Redesigning the TransLink SkyTrain fare map to simplify the zone-based system for new and
-                        infrequent riders.
-                    </p>
-                </div>
+                <a href="/projects/translink.html" class="card-overlay">
+                    <div class="overlay-content">
+                        <h2 class="project-title">Interactive<br>Zone Map</h2>
+                        <p class="project-description">
+                            Redesigning the TransLink SkyTrain fare map to simplify the zone-based system for new and
+                            infrequent riders.
+                        </p>
+                        <p><span class="view-project"><strong>View Project__</strong></span></p>
+                    </div>
+                </a>
             </div>
 
             <div class="project-card">
                 <div class="project-tags">
-                    <h4><span class="number">02</span></h4>
                     <h4><span class="category">ux research</span></h4>
                 </div>
 
-                <img src="img/uncenshered.png" alt="TransLink Compass Vending Machine">
+                <img src="img/uncenshered_hero.png" alt="Project Thumbnail">
 
-                <div class="card-overlay">
-                    <h2 class="project-title">#UncensHERed</h2>
-                    <p class="project-description">
-                        Redesigning the TransLink SkyTrain fare map to simplify the zone-based system for new and
-                        infrequent riders.
-                    </p>
-                </div>
+                <a href="/projects/uncenshered.html" class="card-overlay">
+                    <div class="overlay-content">
+                        <h2 class="project-title">#UncensHERed</h2>
+                        <p class="project-description">
+                            A testimony platform for users to share their experiences of censorship by social media
+                            platforms for posting women's health topics.
+                        </p>
+                        <p><span class="view-project"><strong>View Project__</strong></span></p>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-year">@2026</div>
+    <footer class="main-footer">
+        <p class="footer-year">© 2026 — Elizabeth Liao</p>
         <div class="footer-links">
-            <a href="#">GitHub Link</a>
-            <a href="styleguide.html">Style Guide</a>
-            <a href="citations.html">Citations</a>
+            <a href="../styleguide.html" class="footer-link">Style Guide</a>
+            <a href="../citations.html" class="footer-link">GitHub</a>
+            <a href="../citations.html" class="footer-link">Citations</a>
         </div>
     </footer>
 
 </body>
+
 </html>
